@@ -145,7 +145,7 @@ while True:
 
             # Mid-game menu & restart options
             cvzone.putTextRect(image, "Restart (R)", (50, 450), scale=2, colorR=(180, 255, 100), offset=8)
-            cvzone.putTextRect(image, "Main Menu (M)", (300, 450), scale=2, colorR=(255, 150, 150), offset=8)
+            cvzone.putTextRect(image, "Main Menu (M)", (360, 450), scale=2, colorR=(255, 150, 150), offset=8)
 
             # Handle mid-game key presses
             if key == ord('r'):
@@ -174,8 +174,8 @@ while True:
             cvzone.putTextRect(image, f"You Scored {score}pts!", (200, 200), scale=1.8, colorR=(0, 200, 255))
             cvzone.putTextRect(image, f"Wanna score {high_score}pts in {game_duration}s?", (100, 400), scale=1.5, colorR=(255, 215, 0))
 
-        cvzone.putTextRect(image, "Restart (R)", (50, 450), scale=2, colorR=(100, 255, 100))
-        cvzone.putTextRect(image, "Main Menu (M)", (300, 450), scale=2, colorR=(255, 100, 100))
+        cvzone.putTextRect(image, "Play Again (R)", (50, 450), scale=2, colorR=(100, 255, 100))
+        cvzone.putTextRect(image, "Main Menu (M)", (360, 450), scale=2, colorR=(255, 100, 100))
 
         if key == ord('r'):
             start_time = time.time()
